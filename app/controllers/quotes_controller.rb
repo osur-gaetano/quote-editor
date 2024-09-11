@@ -36,7 +36,7 @@ class QuotesController < ApplicationController
   end
 
   def destroy
-    @quote = Quote.destroy
+    @quote.destroy
     redirect_to quotes_path, notice: "Quotes was successfully destroyed." 
   end
 
